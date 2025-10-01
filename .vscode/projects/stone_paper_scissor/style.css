@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heading Styling */
+h1 {
+    background-color: darkblue;
+    color: white;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Choices Container */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+/* Individual Choice Circle */
+.choice {
+    height: 120px;
+    width: 120px;
+    border: 3px solid blueviolet;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+}
+
+/* Image Styling */
+.choice img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.score-board{
+    margin-top: 3rem;;
+    height:200;
+    width:250;
+    background-color: crimson;
+    color:beige;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5rem;
+}
+#user-score,#computer-score{
+    font-size:5rem;
+}
+p{
+    color:burlywood;
+    gap:3rem;
+    font-size:3rem;
+}
+#message{
+    
+    width:350px;
+    height:80px;
+    margin-top:2rem;
+    color:black;
+    font-size:2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+
+}
+

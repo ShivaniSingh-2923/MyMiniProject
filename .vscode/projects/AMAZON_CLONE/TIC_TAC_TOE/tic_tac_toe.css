@@ -1,0 +1,96 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.game-title {
+    font-size: 3rem;       /* Big and clear */
+    color: #4b0082;        /* Dark Indigo color */
+    justify-content: center;
+    align-items: center;   /* Centered at top */
+    margin: 2rem 0;        /* Space from top and container */
+    font-family: 'Arial', sans-serif;
+}
+/* Main container */
+.container {
+    height: 70vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+/* Game grid */
+.game {
+    background-color: blue;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    border-radius: 1rem;
+    padding: 1vmin;
+}
+
+/* Each box in the game */
+.box {
+    background-color: beige;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: brown;
+    cursor: pointer;
+}
+
+/* Buttons */
+#reset-button,
+#new-button {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    background-color: chartreuse;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Message styling */
+#msg {
+    color: #ffffc7;
+    font-size:5vmin;
+    margin-bottom: 2rem;
+}
+
+/* Message container */
+.msg-container {
+    height: 40vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide class */
+.hide {
+    display: none;
+}
